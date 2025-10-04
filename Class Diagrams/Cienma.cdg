@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Cienma">
+  <ClassDiagramComponents>
+    <Class name="Person" package="" visibility="public" xPosition="788.0" yPosition="5.0">
+      <Fields>
+        <Field name="disability" type="boolean" visibility="private"/>
+        <Field name="birthDay" type="Date" visibility="private"/>
+        <Field name="email" type="String" visibility="private"/>
+        <Field name="id" type="String" visibility="private"/>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="phoneNumber" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Employee" package="" visibility="public" xPosition="396.0" yPosition="5.0">
+      <Fields>
+        <Field name="salary" type="double" visibility="private"/>
+        <Field name="address" type="String" visibility="private"/>
+        <Field name="email" type="String" visibility="private"/>
+        <Field name="employeeId" type="String" visibility="private"/>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="position" type="String" visibility="private"/>
+        <Field name="telephone" type="String" visibility="private"/>
+        <Field name="startDay" type="Date" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Customer" package="" visibility="public" xPosition="1052.0" yPosition="23.0">
+      <Fields>
+        <Field name="customerId" type="String" visibility="private"/>
+        <Field name="email" type="String" visibility="private"/>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="phoneNumber" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Manager" package="" visibility="public" xPosition="377.0" yPosition="577.0">
+      <Fields>
+        <Field name="bonus" type="double" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Administrator" package="" visibility="public" xPosition="16.0" yPosition="78.0">
+      <Fields>
+        <Field name="bonus" type="double" visibility="private"/>
+        <Field name="adminId" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Concierge" package="" visibility="public" xPosition="16.0" yPosition="264.0">
+      <Fields>
+        <Field name="conciergeId" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Technical" package="" visibility="public" xPosition="28.0" yPosition="577.0">
+      <Fields>
+        <Field name="idTechnical" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Guard" package="" visibility="public" xPosition="199.0" yPosition="577.0">
+      <Fields>
+        <Field name="idGuard" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Seller" package="" visibility="public" xPosition="737.0" yPosition="577.0">
+      <Fields>
+        <Field name="idSeller" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="TicketStaff" package="" visibility="public" xPosition="554.0" yPosition="577.0">
+      <Fields>
+        <Field name="staffId" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Bill" package="" visibility="public" xPosition="1050.0" yPosition="264.0">
+      <Fields>
+        <Field name="vip" type="boolean" visibility="private"/>
+        <Field name="mount" type="double" visibility="private"/>
+        <Field name="subTotal" type="double" visibility="private"/>
+        <Field name="tax" type="double" visibility="private"/>
+        <Field name="category" type="String" visibility="private"/>
+        <Field name="paymenthMethod" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Product" package="" visibility="public" xPosition="1055.0" yPosition="534.0">
+      <Fields>
+        <Field name="price" type="double" visibility="private"/>
+        <Field name="stock" type="int" visibility="private"/>
+        <Field name="category" type="String" visibility="private"/>
+        <Field name="code" type="String" visibility="private"/>
+        <Field name="description" type="String" visibility="private"/>
+        <Field name="productName" type="String" visibility="private"/>
+        <Field name="Status" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Ticket" package="" visibility="public" xPosition="788.0" yPosition="240.0">
+      <Fields>
+        <Field name="price" type="double" visibility="private"/>
+        <Field name="Date" type="Date" visibility="private"/>
+        <Field name="sitNumber" type="String" visibility="private"/>
+        <Field name="movieTitle" type="String" visibility="private"/>
+        <Field name="paymentMethod" type="String" visibility="private"/>
+        <Field name="roomNumber" type="String" visibility="private"/>
+        <Field name="status" type="String" visibility="private"/>
+        <Field name="ticketId" type="String" visibility="private"/>
+        <Field name="type" type="String" visibility="private"/>
+        <Field name="showTime" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Product" target="Bill"/>
+    <IsRelation name="is" source="Employee" target="Person"/>
+    <IsRelation name="is" source="Bill" target="Customer"/>
+    <IsRelation name="is" source="Ticket" target="Customer"/>
+    <IsRelation name="is" source="Administrator" target="Employee"/>
+    <IsRelation name="is" source="Technical" target="Employee"/>
+    <IsRelation name="is" source="Manager" target="Employee"/>
+    <IsRelation name="is" source="Seller" target="Employee"/>
+    <IsRelation name="is" source="Concierge" target="Employee"/>
+    <IsRelation name="is" source="Customer" target="Person"/>
+    <IsRelation name="is" source="TicketStaff" target="Employee"/>
+    <IsRelation name="is" source="Guard" target="Employee"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
