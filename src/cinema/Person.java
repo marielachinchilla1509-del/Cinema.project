@@ -34,6 +34,8 @@ public class Person {
         String name= "Not registered";
         String phoneNumber= "Not registered";
     }
+    
+    
 
     public boolean isDisability() {
         return disability;
