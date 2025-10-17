@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<ClassDiagram name="Cienma">
+  <ClassDiagramComponents>
+    <Class name="Person" package="" visibility="public" xPosition="441.0" yPosition="2.0">
+      <Fields>
+        <Field name="disability" type="boolean" visibility="private"/>
+        <Field name="birthDay" type="Date" visibility="private"/>
+        <Field name="email" type="String" visibility="private"/>
+        <Field name="id" type="String" visibility="private"/>
+        <Field name="name" type="String" visibility="private"/>
+        <Field name="phoneNumber" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Employee" package="" visibility="public" xPosition="441.0" yPosition="251.0">
+      <Fields>
+        <Field name="salary" type="double" visibility="private"/>
+        <Field name="address" type="String" visibility="private"/>
+        <Field name="employeeId" type="String" visibility="private"/>
+        <Field name="position" type="String" visibility="private"/>
+        <Field name="startDay" type="Date" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Customer" package="" visibility="public" xPosition="1081.0" yPosition="224.0">
+      <Fields>
+        <Field name="customerId" type="String" visibility="private"/>
+        <Field name="invoices" type="Invoice[]" visibility="private"/>
+        <Field name="vip" type="boolean" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Administrator" package="" visibility="public" xPosition="551.0" yPosition="563.0">
+      <Fields>
+        <Field name="bonus" type="double" visibility="private"/>
+        <Field name="adminId" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Technical" package="" visibility="public" xPosition="150.0" yPosition="486.0">
+      <Fields>
+        <Field name="idTechnical" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Seller" package="" visibility="public" xPosition="345.0" yPosition="563.0">
+      <Fields>
+        <Field name="idSeller" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="TicketStaff" package="" visibility="public" xPosition="751.0" yPosition="472.0">
+      <Fields>
+        <Field name="staffId" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Invoice" package="" visibility="public" xPosition="1258.0" yPosition="421.0">
+      <Fields>
+        <Field name="membership" type="boolean" visibility="private"/>
+        <Field name="date" type="Date" visibility="private"/>
+        <Field name="paymentMethod" type="String" visibility="private"/>
+        <Field name="invoiceNumber" type="String" visibility="private"/>
+        <Field name="tickets" type="Ticket[]" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Product" package="" visibility="public" xPosition="1258.0" yPosition="975.0">
+      <Fields>
+        <Field name="price" type="double" visibility="private"/>
+        <Field name="stock" type="int" visibility="private"/>
+        <Field name="category" type="String" visibility="private"/>
+        <Field name="code" type="String" visibility="private"/>
+        <Field name="description" type="String" visibility="private"/>
+        <Field name="productName" type="String" visibility="private"/>
+        <Field name="Status" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Ticket" package="" visibility="public" xPosition="1258.0" yPosition="684.0">
+      <Fields>
+        <Field name="price" type="double" visibility="private"/>
+        <Field name="date" type="Date" visibility="private"/>
+        <Field name="sitNumber" type="String" visibility="private"/>
+        <Field name="movieTitle" type="String" visibility="private"/>
+        <Field name="paymentMethod" type="String" visibility="private"/>
+        <Field name="roomNumber" type="String" visibility="private"/>
+        <Field name="status" type="String" visibility="private"/>
+        <Field name="ticketId" type="String" visibility="private"/>
+        <Field name="type" type="String" visibility="private"/>
+        <Field name="showTime" type="String" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Class name="Membership" package="" visibility="public" xPosition="979.0" yPosition="431.0">
+      <Fields>
+        <Field name="discount" type="Double" visibility="private"/>
+        <Field name="validityTime" type="Date" visibility="private"/>
+        <Field name="benefits" type="String" visibility="private"/>
+        <Field name="type" type="TypeMembership" visibility="private"/>
+      </Fields>
+      <Constructors/>
+      <Methods/>
+    </Class>
+    <Enum name="TypeMembership" package="" visibility="public" xPosition="979.0" yPosition="684.0">
+      <Literals>
+        <Literal name="BASIC"/>
+        <Literal name="PRO"/>
+        <Literal name="PREMIUN"/>
+      </Literals>
+    </Enum>
+  </ClassDiagramComponents>
+  <ClassDiagramRelations>
+    <IsRelation name="is" source="Employee" target="Person"/>
+    <HasRelation name="has" source="Customer" target="Membership" type="Composition" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <HasRelation name="has" source="Customer" target="Invoice" type="Composition" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+    <HasRelation name="has" source="Ticket" target="Product" type="Default" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+    <IsRelation name="is" source="TicketStaff" target="Employee"/>
+    <IsRelation name="is" source="Seller" target="Employee"/>
+    <HasRelation name="has" source="Membership" target="TypeMembership" type="Default" sourceCardinality="0..1" targetCardinality="1..1"/>
+    <IsRelation name="is" source="Customer" target="Person"/>
+    <IsRelation name="is" source="Administrator" target="Employee"/>
+    <IsRelation name="is" source="Technical" target="Employee"/>
+    <HasRelation name="has" source="Invoice" target="Ticket" type="Composition" sourceCardinality="0..1" targetCardinality="1..*" collectionType="List"/>
+  </ClassDiagramRelations>
+</ClassDiagram>
