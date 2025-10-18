@@ -3,33 +3,25 @@ package cinema;
 import java.util.Date;
 
 public class Seller extends Employee {
+    
+    private boolean state;
 
     private String idSeller;
     
-    private boolean state;
-    
-    private Date startDay;
 
-    public Seller(String idSeller, boolean state, Date startDay) {
+    public Seller(String idSeller, boolean state, double salary, String address, 
+            String employeeId, String position, Date startDay, 
+            boolean disability, Date birthDay, String email, String id,
+            String name, String phoneNumber) {
+        super(salary, address, employeeId, position, startDay, disability, 
+                birthDay, email, id, name, phoneNumber);
         this.idSeller = idSeller;
         this.state = state;
-        this.startDay = startDay;
     }
-
-  
 
     public Seller() {
-        boolean state = false;
-        String idSeller = "Not registred";
-        String startDay = "Not registred";
-    }
-
-    public String getIdSeller() {
-        return idSeller;
-    }
-
-    public void setIdSeller(String idSeller) {
-        this.idSeller = idSeller;
+        boolean state= false;
+        String idSeller = "Not registered";
     }
 
     public boolean isState() {
@@ -40,21 +32,23 @@ public class Seller extends Employee {
         this.state = state;
     }
 
-    public Date getStartDay() {
-        return startDay;
+    public String getIdSeller() {
+        return idSeller;
     }
 
-    public void setStartDay(Date startDay) {
-        this.startDay = startDay;
+    public void setIdSeller(String idSeller) {
+        this.idSeller = idSeller;
     }
 
     @Override
     public String toString() {
-        return "Seller{" + "idSeller=" + idSeller + ", state=" + state +
-                ", startDay=" + startDay + '}';
+        return "Seller{" + "state=" + state + ", idSeller=" + idSeller + '}';
     }
-    
-    
+
+   
+
+   
+
 
     
     }

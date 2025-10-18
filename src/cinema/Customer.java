@@ -10,21 +10,19 @@ public class Customer extends Person {
 
     private Invoice[] invoices;
 
-
-    public Customer(String customerId, Invoice[] invoices, boolean vip,
-            boolean disability, Date birthDay, String email, String id,
+    public Customer(boolean vip, String customerId, Invoice[] invoices,
+            boolean disability, Date birthDay, String email, String id, 
             String name, String phoneNumber) {
         super(disability, birthDay, email, id, name, phoneNumber);
         this.vip = vip;
         this.customerId = customerId;
         this.invoices = invoices;
-        
     }
 
     public Customer() {
         boolean vip= false;
         String customerId= "Not registered";
-        invoices= new Invoice[0];
+       Invoice[] invoices= new Invoice[0];
     }
 
     public boolean isVip() {
@@ -58,9 +56,6 @@ public class Customer extends Person {
     }
     
     
-    
-    
 
-    
     
 }

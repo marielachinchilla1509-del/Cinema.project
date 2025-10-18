@@ -15,7 +15,7 @@ public class Invoice {
 
     private Ticket[] tickets;
 
-    public Invoice(boolean membership, Date date, String paymentMethod,
+    public Invoice(boolean membership, Date date, String paymentMethod, 
             String invoiceNumber, Ticket[] tickets) {
         this.membership = membership;
         this.date = date;
@@ -26,10 +26,10 @@ public class Invoice {
 
     public Invoice() {
         boolean membership = false;
-        Date date;
-        String paymentMethod = "Not registred";
-        String invoiceNumber = "Not registred";
-        Ticket[] tikets;
+        Date date= null;
+        String paymentMethod= "Not registered";
+        String invoiceNumber="Not registered";
+        Ticket[] tickets = new Ticket[10];
     }
 
     public boolean isMembership() {
@@ -74,9 +74,13 @@ public class Invoice {
 
     @Override
     public String toString() {
-        return "Invoice{" + "membership=" + membership + ", date=" + date
-                + ", paymentMethod=" + paymentMethod + ", invoiceNumber="
-                + invoiceNumber + ", tickets=" + tickets + '}';
+        return "Invoice{" + "membership=" + membership + ", date=" + date +
+                ", paymentMethod=" + paymentMethod + ", invoiceNumber=" + 
+                invoiceNumber + ", tickets=" + tickets + '}';
     }
+    
+    
 
+    
+   
 }

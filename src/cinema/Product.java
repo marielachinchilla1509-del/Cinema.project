@@ -1,6 +1,7 @@
 package cinema;
+    
+    public class Product {
 
-public class Product {
 
     private double price;
 
@@ -16,7 +17,7 @@ public class Product {
 
     private String Status;
 
-    public Product(double price, int stock, String category, String code,
+    public Product(double price, int stock, String category, String code, 
             String description, String productName, String Status) {
         this.price = price;
         this.stock = stock;
@@ -93,6 +94,8 @@ public class Product {
     
     
     
+}
+    
 
     
-}
+

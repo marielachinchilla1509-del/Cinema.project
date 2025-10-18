@@ -1,15 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project-private xmlns="http://www.netbeans.org/ns/project-private/1">
-    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="1">
+        <file>
+            <url>src/cinema/Seller.java</url>
+            <bookmark id="1">
+                <name/>
+                <line>10</line>
+                <key/>
+            </bookmark>
+        </file>
+    </editor-bookmarks>
     <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
         <group>
             <file>file:/C:/Users/hp/OneDrive/Datos%20adjuntos/Documentos/NetBeansProjects/JavaApplication1/src/cinema/Person.java</file>
             <file>file:/C:/Users/hp/OneDrive/Datos%20adjuntos/Documentos/NetBeansProjects/JavaApplication1/src/cinema/Customer.java</file>
             <file>file:/C:/Users/hp/OneDrive/Datos%20adjuntos/Documentos/NetBeansProjects/JavaApplication1/src/cinema/Ticket.java</file>
             <file>file:/C:/Users/hp/OneDrive/Datos%20adjuntos/Documentos/NetBeansProjects/JavaApplication1/src/cinema/Employee.java</file>
+            <file>file:/C:/Users/hp/OneDrive/Datos%20adjuntos/Documentos/NetBeansProjects/JavaApplication1/src/cinema/Administrator.java</file>
+            <file>file:/C:/Users/hp/OneDrive/Datos%20adjuntos/Documentos/NetBeansProjects/JavaApplication1/src/cinema/Invoice.java</file>
+            <file>file:/C:/Users/hp/OneDrive/Datos%20adjuntos/Documentos/NetBeansProjects/JavaApplication1/src/cinema/Membership.java</file>
+            <file>file:/C:/Users/hp/OneDrive/Datos%20adjuntos/Documentos/NetBeansProjects/JavaApplication1/src/cinema/Product.java</file>
+            <file>file:/C:/Users/hp/OneDrive/Datos%20adjuntos/Documentos/NetBeansProjects/JavaApplication1/src/cinema/Seller.java</file>
             <file>file:/C:/Users/hp/OneDrive/Datos%20adjuntos/Documentos/NetBeansProjects/JavaApplication1/src/cinema/Technical.java</file>
             <file>file:/C:/Users/hp/OneDrive/Datos%20adjuntos/Documentos/NetBeansProjects/JavaApplication1/src/cinema/TicketStaff.java</file>
-            <file>file:/C:/Users/hp/OneDrive/Datos%20adjuntos/Documentos/NetBeansProjects/JavaApplication1/src/cinema/Seller.java</file>
+            <file>file:/C:/Users/hp/OneDrive/Datos%20adjuntos/Documentos/NetBeansProjects/JavaApplication1/src/cinema/TypeMembership.java</file>
         </group>
     </open-files>
 </project-private>

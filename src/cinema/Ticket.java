@@ -40,13 +40,13 @@ public class Ticket {
     }
 
     public Ticket() {
-        double price=0;
-        Date date= null;
-        String sitNumber= "Not registered";
-        String movieTitle="Not registered";
+        double price = 0;
+        Date date = null;
+        String sitNumber = "Not registered";
+        String movieTitle= "Not registered";
         String paymentMethod= "Not registered";
-        String roomNumber="Not registered";
-        String status= "Not registerd";
+        String roomNumber= "Not registered";
+        String status= " Not registered";
         String ticketId= "Not registered";
         String type= "Not registered";
         String showTime= "Not registered";
@@ -136,10 +136,12 @@ public class Ticket {
     public String toString() {
         return "Ticket{" + "price=" + price + ", date=" + date + ", sitNumber="
                 + sitNumber + ", movieTitle=" + movieTitle + ", paymentMethod="
-                + paymentMethod + ", roomNumber=" + roomNumber + ", status=" +
-                status + ", ticketId=" + ticketId + ", type=" + type +
+                + paymentMethod + ", roomNumber=" + roomNumber + ", status=" + 
+                status + ", ticketId=" + ticketId + ", type=" + type + 
                 ", showTime=" + showTime + '}';
     }
+
+    
     
     
 }

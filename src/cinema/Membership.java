@@ -55,10 +55,11 @@ public class Membership {
     @Override
     public String toString() {
         return "Membership{" + "discount=" + discount + ", validityTime=" +
-                validityTime + ", benefits=" + benefits + ", type=" + type + 
-                '}';
+                validityTime + ", benefits=" + benefits + ", type=" + type + '}';
     }
     
     
 }
+    
+
 

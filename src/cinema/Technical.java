@@ -5,23 +5,21 @@ import java.util.Date;
 public class Technical extends Employee {
 
     private String idTechnical;
-    
-     
-    public Technical(double salary, String address, String email,
-                     String employeeId, String name, String position,
-                     String telephone, Date startDay,
-                     String idTechnical) {
-        super(salary, address, email, employeeId, name, position, telephone, startDay);
+
+    public Technical(String idTechnical, double salary, String address,
+            String employeeId, String position, Date startDay,
+            boolean disability, Date birthDay, String email, String id,
+            String name, String phoneNumber) {
+        super(salary, address, employeeId, position, startDay, disability,
+                birthDay, email, id, name, phoneNumber);
         this.idTechnical = idTechnical;
     }
 
-    
     public Technical() {
-        super();
-        this.idTechnical = "Not registered";
+        String idTechnical = "Not registered";
+        
     }
 
-    
     public String getIdTechnical() {
         return idTechnical;
     }
@@ -32,6 +30,9 @@ public class Technical extends Employee {
 
     @Override
     public String toString() {
-        return super.toString() + ", idTechnical='" + idTechnical + "'";
+        return "Technical{" + "idTechnical=" + idTechnical + '}';
     }
+    
+    
+    
 }
